@@ -1,50 +1,50 @@
-# PokedexIA - Pokémon com IA
+# PokedexIA - Pokémon with AI
 
-Uma aplicação moderna de Pokédex que combina dados oficiais de Pokémon com inteligência artificial para gerar explicações personalizadas sobre cada Pokémon.
+A modern Pokédex application that combines official Pokémon data with artificial intelligence to generate personalized explanations about each Pokémon.
 
-## 🏗️ Estrutura do Projeto
+## 🏗️ Project Structure
 
 ```
 pokedexIA/
 ├── pokedex-web/              # Frontend (Next.js + TypeScript)
 ├── pokedex-go-services/      # Backend Services (Go)
 │   └── packages/
-│       ├── api/              # API do Pokémon
-│       └── api-gpt/          # API do GPT (futuro)
+│       ├── api/              # Pokémon API
+│       └── api-gpt/          # GPT API (future)
 └── README.md
 ```
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
 ### Frontend
-- **Next.js 14+** - Framework React
-- **TypeScript** - Tipagem estática
-- **Tailwind CSS** - Estilização
+- **Next.js 14+** - React framework
+- **TypeScript** - Static typing
+- **Tailwind CSS** - Styling
 
 ### Backend
-- **Go 1.21+** - Linguagem principal
-- **Gin** - Framework web
-- **PokeAPI** - Dados dos Pokémon
-- **OpenAI API** - Explicações com IA (futuro)
+- **Go 1.21+** - Main language
+- **Gin** - Web framework
+- **PokeAPI** - Pokémon data
+- **OpenAI API** - AI explanations (future)
 
-## 📋 Funcionalidades
+## 📋 Features
 
-### ✅ Implementadas
-- [x] API REST para busca de Pokémon
-- [x] Integração com PokeAPI
-- [x] Busca por ID e nome
-- [x] Testes unitários
-- [x] CI/CD com GitHub Actions
+### ✅ Implemented
+- [x] REST API for Pokémon search
+- [x] PokeAPI integration
+- [x] Search by ID and name
+- [x] Unit tests
+- [x] CI/CD with GitHub Actions
 
-### 🚧 Em Desenvolvimento
-- [ ] Interface web responsiva
-- [ ] Integração com OpenAI GPT
-- [ ] Geração de explicações personalizadas
-- [ ] Cache e otimizações
+### 🚧 In Development
+- [ ] Responsive web interface
+- [ ] OpenAI GPT integration
+- [ ] Personalized explanation generation
+- [ ] Cache and optimizations
 
-## 🛠️ Como Executar
+## 🛠️ How to Run
 
-### Backend (API do Pokémon)
+### Backend (Pokémon API)
 ```bash
 cd pokedex-go-services/packages/api
 go mod tidy
@@ -58,7 +58,7 @@ npm install
 npm run dev
 ```
 
-## 🧪 Testes
+## 🧪 Tests
 
 ### Backend
 ```bash
@@ -66,19 +66,29 @@ cd pokedex-go-services/packages/api
 go test -v ./...
 ```
 
-## 📚 Documentação
+## 📚 Documentation
 
 - [Backend API](pokedex-go-services/packages/api/README.md)
 - [Frontend](pokedex-web/README.md)
 
-## 🤝 Contribuição
+## 🤝 Contributing
 
-1. Fork o projeto
-2. Crie uma branch para sua feature
-3. Commit suas mudanças
-4. Push para a branch
-5. Abra um Pull Request
+This project follows a Pull Request workflow. To contribute:
 
-## 📄 Licença
+1. **Fork** the project
+2. **Clone** your fork locally
+3. **Create a branch** for your feature: `git checkout -b feature/new-feature`
+4. **Develop** following project standards
+5. **Commit** using [Conventional Commits](https://www.conventionalcommits.org/)
+6. **Push** to your branch
+7. **Open a Pull Request** to `develop`
 
-Este projeto está sob a licença MIT.
+📖 **Read the [Contributing Guide](CONTRIBUTING.md)** for complete details about:
+- Commit conventions
+- Code standards
+- Development workflow
+- Issue and PR templates
+
+## 📄 License
+
+This project is under MIT license.
