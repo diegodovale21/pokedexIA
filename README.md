@@ -39,6 +39,7 @@ pokedexIA/
 - [x] Unit tests
 - [x] CI/CD with GitHub Actions
 - [x] Frontend project setup (Next.js + TypeScript + SCSS)
+- [x] Frontend CI/CD with GitHub Actions
 
 ### 🚧 In Development
 
@@ -93,7 +94,13 @@ go test -v ./...
 cd pokedex-web
 pnpm lint
 pnpm type-check
+pnpm build
 ```
+
+### CI/CD
+
+- **Backend**: Automatic testing on push/PR to `pokedex-go-services/**`
+- **Frontend**: Automatic testing on push/PR to `pokedex-web/**`
 
 ## 📚 Documentation
 
