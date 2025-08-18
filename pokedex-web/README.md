@@ -103,11 +103,30 @@ This project uses **SCSS** instead of Tailwind CSS:
 
 The frontend connects to the PokedexIA backend API running on `http://localhost:8080`.
 
+## 🚀 CI/CD Pipeline
+
+The frontend has automatic CI/CD configured in `.github/workflows/frontend-ci.yml`:
+
+- **TypeScript compilation** check
+- **ESLint** code quality validation  
+- **Build test** to ensure production build works
+- **Security audit** for dependencies
+- **Automatic triggers** on push/PR to `pokedex-web/**`
+
+### CI Status
+
+All checks must pass before merging:
+- ✅ TypeScript compilation
+- ✅ ESLint validation
+- ✅ Build test
+- ⚠️ Security audit (non-blocking)
+
 ## 🚧 Development Status
 
 - [x] Project setup
 - [x] Basic layout structure
 - [x] SCSS configuration
+- [x] CI/CD pipeline configured
 - [ ] API integration
 - [ ] Pokémon search functionality
 - [ ] Responsive design
