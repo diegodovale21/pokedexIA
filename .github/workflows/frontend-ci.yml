@@ -16,33 +16,33 @@ jobs:
     defaults:
       run:
         working-directory: pokedex-web
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: '8.10.2'
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.9.0'
-      
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      
+
       - name: TypeScript type check
         run: pnpm type-check
-      
+
       - name: ESLint
         run: pnpm lint
-      
+
       - name: Build test
         run: pnpm build
-      
+
       - name: Security audit
         run: pnpm audit --audit-level moderate
         continue-on-error: true
